@@ -5,17 +5,17 @@
         <div class="container col-xxl-8">
 
             <div class="d-flex">
-                <a href="{{ route('blog') }}">Blog</a>
+                <a href="{{ route('blog') }}">{{ __('Blog') }}</a>
                 <div class="mx-1"> . </div>
-                <a href="">Edit Artikel</a>
+                <a href="">{{ __('Edit Article') }}</a>
             </div>
 
-            <h4 class="fw-bold mb-3">Halaman edit artikel</h4>
+            <h4 class="fw-bold mb-3">{{ __('Edit Article Page') }}</h4>
 
             <form action="{{ route('blog.update', $artikel->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group mb-4">
-                    <label for="">Masukan Judul Artikel</label>
+                    <label for="">{{ __('Enter the Article Title') }}</label>
                     <input type="text" name="judul" class="form-control @error('judul') is-invalid @enderror"
                         value="{{ old('judul', $artikel->judul) }}">
 
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="detail-admin-edit form-group mb-4">
-                    <label for="">Pilih Foto Kegiatan</label>
+                    <label for="">{{ __('Select Activity Photo') }}</label>
                     <input type="hidden" name="old_image" value="{{ $artikel->image }}">
                     <input type="file" name="image" class="form-control @error('image') is-invalid @enderror">
                     <div class="edit-img">
@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="form-group mb-4">
-                    <label for="">Artikel Berita</label>
+                    <label for="">{{ __('News Article') }}</label>
                     <textarea name="desc" id="summernote">
                     {!! $artikel->desc !!}
                 </textarea>
@@ -54,7 +54,7 @@
                     @enderror
                 </div>
 
-                <button type="submit" class="btn btn-primary">Simpan</button>
+                <button type="submit" class="btn btn-primary">{{ __('Update') }}</button>
             </form>
         </div>
     </section>

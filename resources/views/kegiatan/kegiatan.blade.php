@@ -11,85 +11,16 @@
                             Home / News / Practice LDK
                         </div>
                         <div class="row col-lg-15 mb-5">
-                            <div class="col">
+                            @foreach ($data as $item)
+                                <div class="col">
+                                    <img src="{{ asset('storage/photo/' . $item->image) }}" class="img-fluid mb-3"
+                                        height="300" width="300" alt=""
+                                        style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
+                                </div>
+                            @endforeach
 
-                                <img src="{{ asset('assets/images/berita7.png') }}" class="img-fluid mb-3" height="300"
-                                    width="300" alt=""
-                                    style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            </div>
-                            <div class="col">
-
-                                <img src="{{ asset('assets/images/berita7.png') }}" class="img-fluid mb-3" height="300"
-                                    width="300" alt=""
-                                    style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            </div>
-                            <div class="col">
-
-                                <img src="{{ asset('assets/images/berita7.png') }}" class="img-fluid mb-3" height="300"
-                                    width="300" alt=""
-                                    style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            </div>
                         </div>
-                        <div class="row col-lg-15 mb-5">
-                            <div class="col">
 
-                                <img src="{{ asset('assets/images/berita7.png') }}" class="img-fluid mb-3" height="300"
-                                    width="300" alt=""
-                                    style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            </div>
-                            <div class="col">
-
-                                <img src="{{ asset('assets/images/berita7.png') }}" class="img-fluid mb-3" height="300"
-                                    width="300" alt=""
-                                    style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            </div>
-                            <div class="col">
-
-                                <img src="{{ asset('assets/images/berita7.png') }}" class="img-fluid mb-3" height="300"
-                                    width="300" alt=""
-                                    style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            </div>
-                        </div>
-                        <div class="row col-lg-15 mb-5">
-                            <div class="col">
-
-                                <img src="{{ asset('assets/images/berita7.png') }}" class="img-fluid mb-3" height="300"
-                                    width="300" alt=""
-                                    style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            </div>
-                            <div class="col">
-
-                                <img src="{{ asset('assets/images/berita7.png') }}" class="img-fluid mb-3" height="300"
-                                    width="300" alt=""
-                                    style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            </div>
-                            <div class="col">
-
-                                <img src="{{ asset('assets/images/berita7.png') }}" class="img-fluid mb-3" height="300"
-                                    width="300" alt=""
-                                    style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            </div>
-                        </div>
-                        <div class="row col-lg-15 mb-5">
-                            <div class="col">
-
-                                <img src="{{ asset('assets/images/berita7.png') }}" class="img-fluid mb-3" height="300"
-                                    width="300" alt=""
-                                    style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            </div>
-                            <div class="col">
-
-                                <img src="{{ asset('assets/images/berita7.png') }}" class="img-fluid mb-3" height="300"
-                                    width="300" alt=""
-                                    style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            </div>
-                            <div class="col">
-
-                                <img src="{{ asset('assets/images/berita7.png') }}" class="img-fluid mb-3" height="300"
-                                    width="300" alt=""
-                                    style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            </div>
-                        </div>
 
                     </div>
             </div>

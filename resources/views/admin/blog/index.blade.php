@@ -4,14 +4,14 @@
     <section class="py-5" style="margin-top: 100px">
         <div class="container col-xxl-8">
             <div class="d-flex">
-                <a href="{{ route('blog') }}">Blog</a>
+                <a href="{{ route('blog') }}">{{ __('Blog') }}</a>
                 <div class="mx-1"> . </div>
-                <a href="{{ route('blog.create') }}">Buat Blog</a>
+                <a href="{{ route('blog.create') }}">{{ __('Create Blog') }}</a>
 
             </div>
-            <h4>Halaman Blog Artikel</h4>
+            <h4>{{ __('Blog Article Page') }}</h4>
 
-            <a href="{{ route('blog.create') }}" class="btn btn-success py-2 mb-3">Buat Artikel</a>
+            <a href="{{ route('blog.create') }}" class="btn btn-success py-2 mb-3">{{ __('Create Article') }}</a>
 
             @if (session()->has('success'))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -46,11 +46,12 @@
                                     {{ $artikel->judul }}
                                 </td>
                                 <td>
-                                    <a href="{{ route('blog.edit', $artikel->id) }}" class="btn btn-warning">Edit</a>
+                                    <a href="{{ route('blog.edit', $artikel->id) }}"
+                                        class="btn btn-warning">{{ __('Edit') }}</a>
                                     <form action="{{ route('blog.destroy', $artikel->id) }}" method="POST"
                                         class="d-inline">
                                         @csrf
-                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                        <button type="submit" class="btn btn-danger">{{ __('Delete') }}</button>
                                     </form>
                                 </td>
                             </tr>

@@ -9,25 +9,26 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card shadow-sm rounded-3 border-0">
-                        <img src="{{ asset('assets/images/berita9.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('assets/images/berita5.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">{{ __('Activity Photo') }}</h5>
+                            <h5 class="card-title">{{ __('Blog Article') }}</h5>
                             <p class="card-text">{{ __('Organize and Manage School Activity Articles') }}</p>
-                            <a href="{{ route('photo') }}" class="btn btn-primary">{{ __('Detail') }}</a>
+                            <a href="{{ route('blog') }}" class="btn btn-primary">{{ __('Create') }}</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card shadow-sm rounded-3 border-0">
-                        <img src="{{ asset('assets/images/berita5.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset('assets/images/berita.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">{{ __('Blog Article') }}</h5>
+                            <h5 class="card-title">{{ __('Photo Activity') }}</h5>
                             <p class="card-text">{{ __('Organize and Manage School Activity Articles') }}</p>
-                            <a href="{{ route('blog') }}" class="btn btn-primary">{{ __('Detail') }}</a>
+                            <a href="{{ route('photo') }}" class="btn btn-primary">{{ __('Create') }}</a>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 @endsection

@@ -4,12 +4,13 @@
     <section id="detail" style="margin-top: 100px" class="py-5">
         <div class="container col-xxl-8">
             <div class="mb-3">
-                Home / News / Practice LDK
+                Home / Extra / Volly
             </div>
-            <img src="{{ asset('assets/images/ekstra1.png') }}" class="img-fluid mb-3" alt="">
-            <div class="content-extra">
+            <img src="{{ asset('assets/images/voli.png') }}" class="img-fluid mb-3" height="500" width="500" alt=""
+                style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
+            <div class="content-news">
                 <p class="mb-3 text-secondary">21/2/2024</p>
-                <h4 class="fw-bold mb-3">{{ __('Practice LDK') }}</h4>
+                <h4 class="fw-bold mb-3">{{ __('Volly Ball') }}</h4>
                 <p class="text-secondary">
                     {{ __('The OSIS of Bangsri 1 State Vocational School held Basic Student Leadership and Management Training (LDKS) with the inspiring theme, "Building Leadership with Character in the Millennial Era". This intense activity lasted for one full day, precisely on Friday, January 26 2024.
                                                                                                                                                                                                                                                         LDKS is a very important forum for OSIS members to develop their leadership and managerial potential. With a theme that is relevant to the challenges of the millennial era, this activity aims not only to create leaders who are able to manage organizations, but also uphold character values in leadership. 
