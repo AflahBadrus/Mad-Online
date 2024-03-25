@@ -23,9 +23,11 @@ class AppController extends Controller
     }
     public function detail($slug)
     {
+
+
         $artikel = Blog::where('slug', $slug)->first();
         return view('news.detail', [
-            'artikels' => $artikel
+            'artikel' => $artikel
         ]);
     }
 }

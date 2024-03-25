@@ -22,15 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [AppController::class, 'index']);
 
 Route::get('/news', [AppController::class, 'news']);
-Route::get('/detail', function () {
-    return view('news.detail');
-});
-Route::get('/detail2', function () {
-    return view('news.detail2');
-});
-Route::get('/detail3', function () {
-    return view('news.detail3');
-});
+Route::get('/detail/{slug}', [AppController::class, 'detail'])->name('detail');
 
 Route::get('/extra', function () {
     return view('extra.extra');

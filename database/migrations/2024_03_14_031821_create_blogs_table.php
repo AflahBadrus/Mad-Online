@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('judul')->nullable();
             $table->string('slug')->nullable();
             $table->string('image')->nullable();
-            $table->string('desc')->nullable();
+            $table->text('desc')->nullable();
             $table->timestamps();
         });
     }
