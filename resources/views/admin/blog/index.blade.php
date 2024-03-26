@@ -51,13 +51,40 @@
                                     <form action="{{ route('blog.destroy', $artikel->id) }}" method="POST"
                                         class="d-inline">
                                         @csrf
-                                        <button type="submit" class="btn btn-danger">{{ __('Delete') }}</button>
+                                        <a href="{{ route('blog.destroy', $artikel->id) }}" class="btn btn-danger"
+                                            data-bs-target="#deleteModal{{ $artikel->id }}"
+                                            data-bs-toggle="modal">{{ __('Delete') }}</a>
                                     </form>
                                 </td>
                             </tr>
                         @endforeach
                     </tbody>
                 </table>
+                <div class="modal fade" id="deleteModal{{ $artikel->id }}" tabindex="-1"
+                    aria-labelledby="deleteModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="deleteModalLabel">{{ __('Confirm Delete') }}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="{{ route('blog.destroy', $artikel->id) }}" method="POST"
+                                    enctype="multipart/form-data">
+                                    @csrf
+                                    <input type="hidden" name="id_photo" value="{{ $artikel->id }}">
+
+                                    <div class="form-group mb-3">
+                                        Apakah Kamu Yakin Artikel Ini Dihapus?
+                                    </div>
+
+                                    <button type="submit" class="btn btn-danger">{{ __('Delete') }}</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

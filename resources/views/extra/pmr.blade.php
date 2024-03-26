@@ -3,11 +3,10 @@
 @section('content')
     <section id="detail" style="margin-top: 100px" class="py-5">
         <div class="container col-xxl-8">
-            <div class="mb-3">
-                Home / Extra / Red Cross Teen
+            <div class="d-flex justify-content-center">
+                <img src="{{ asset('assets/images/pmr.png') }}" class="img-fluid mb-3" height="500" width="500"
+                    alt="" style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
             </div>
-            <img src="{{ asset('assets/images/pmr.png') }}" class="img-fluid mb-3" height="500" width="500" alt=""
-                style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
             <div class="content-news">
                 <p class="mb-3 text-secondary">21/2/2024</p>
                 <h4 class="fw-bold mb-3">{{ __('Red Cross Teen') }}</h4>

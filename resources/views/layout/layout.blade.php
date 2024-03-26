@@ -36,13 +36,13 @@
                         <h5 class="fw-bold mb-3">{{ __('Navigation') }}</h5>
                         <div class="d-flex">
                             <ul class="nav flex-column me-5">
-                                <li class="nav-item mb-2"><a href=""
+                                <li class="nav-item mb-2"><a href="/"
                                         class="nav-link p-0 text-muted">{{ __('Home') }}</a></li>
-                                <li class="nav-item mb-2"><a href=""
+                                <li class="nav-item mb-2"><a href="/news"
                                         class="nav-link p-0 text-muted">{{ __('News New') }}</a></li>
-                                <li class="nav-item mb-2"><a href=""
+                                <li class="nav-item mb-2"><a href="/extra"
                                         class="nav-link p-0 text-muted">{{ __('Extracurricular') }}</a></li>
-                                <li class="nav-item mb-2"><a href=""
+                                <li class="nav-item mb-2"><a href="/kegiatan"
                                         class="nav-link p-0 text-muted">{{ __('Activity School Photo') }}</a></li>
                             </ul>
                         </div>
