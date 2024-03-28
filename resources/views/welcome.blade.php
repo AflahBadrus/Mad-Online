@@ -149,7 +149,7 @@
             </div>
             <div class="row justify-content-center">
                 @foreach ($photos as $item)
-                    <div class="col-lg-3 col-md-6 col-3">
+                    <div class="col-lg-3 col-md-6 col-3 mx-2">
                         <a href="" class="image-link">
 
                             <img src="{{ asset('storage/photo/' . $item->image) }}" class="img-fluid" alt=""
