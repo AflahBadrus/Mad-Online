@@ -3,12 +3,12 @@
 @section('content')
     <section style="margin-top: 100px">
         <div class="container py-5">
-            <h3 class="fw-bold mb-3">{{ __('Dashboard Admin Page') }}</h3>
-            <p>{{ __('Welcome Of Dashboard Admin') }}</p>
+            <h3 class="fw-bold py-4">{{ __('Dashboard Admin Page') }}</h3>
+            <p class="mb-3">{{ __('Welcome Of Dashboard Admin') }}</p>
 
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card shadow-sm rounded-3 border-0">
+            <div class="row justify-content-center p-4">
+                <div class="col-lg-4 mx-7">
+                    <div class="card rounded-3 border-0 px-5">
                         <img src="{{ asset('assets/images/berita5.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{ __('Blog Article') }}</h5>
@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card shadow-sm rounded-3 border-0">
+                    <div class="card rounded-3 border-0 px-5">
                         <img src="{{ asset('assets/images/berita.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{ __('Photo Activity') }}</h5>

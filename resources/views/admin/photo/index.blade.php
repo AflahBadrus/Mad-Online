@@ -63,7 +63,9 @@
                                         data-bs-toggle="modal">Edit</a>
                                     <form action="{{ route('photo.destroy', $item->id) }}" method="POST" class="d-inline">
                                         @csrf
-                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                        <a href="#" class="btn btn-danger"
+                                            data-bs-target="#deleteModal{{ $item->id }}"
+                                            data-bs-toggle="modal">Delete</a>
                                     </form>
                                 </td>
                             </tr>
@@ -97,7 +99,33 @@
                                                         value="{{ $item->judul }}">
                                                 </div>
 
-                                                <button type="submit" class="btn btn-primary">Update</button>
+                                                <button type="submit" class="btn btn-warning">Update</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="deleteModal{{ $item->id }}" tabindex="-1"
+                                aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="deleteModalLabel">{{ __('Confirm Delete') }}</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="{{ route('blog.destroy', $item->id) }}" method="POST"
+                                                enctype="multipart/form-data">
+                                                @csrf
+                                                <input type="hidden" name="id_photo" value="{{ $item->id }}">
+
+                                                <div class="form-group mb-3">
+                                                    Apakah Kamu Yakin Foto Ini Dihapus?
+                                                </div>
+
+                                                <button type="submit"
+                                                    class="btn btn-danger">{{ __('Delete') }}</button>
                                             </form>
                                         </div>
                                     </div>
@@ -132,7 +160,7 @@
                             <input type="text" name="judul" class="form-control">
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" class="btn btn-success">Simpan</button>
                     </form>
                 </div>
             </div>

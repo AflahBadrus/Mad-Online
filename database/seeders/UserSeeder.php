@@ -26,5 +26,12 @@ class UserSeeder extends Seeder
             'password' => \bcrypt('admin1234')
         ];
         User::insert($admin2);
+
+        $admin3 = [
+            'name' => 'Sans',
+            'email' => 'sans@gmail.com',
+            'password' => \bcrypt('sans1234')
+        ];
+        User::insert($admin3);
     }
 }

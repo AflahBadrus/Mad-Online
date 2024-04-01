@@ -8,7 +8,7 @@
                 <h2 class="fw-bold">{{ __('Extraculicular') }}</h3>
             </div>
             <div class="row py-5">
-                <div class="col-lg-4 mx-auto" data-aos="fade-down-right">
+                <div class="col-lg-4 mx-auto">
                     <div class="card border-0">
                         <img src="{{ asset('assets/images/pramuka.png') }}" class="img-fluid mb-3" alt=""
                             style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 mx-auto">
-                    <div class="card border-0 " data-aos="fade-up">
+                    <div class="card border-0 ">
                         <img src="{{ asset('assets/images/jurnal.png') }}" class="img-fluid mb-3" alt=""
                             style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
                         <div class="content-news">
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mx-auto" data-aos="fade-down-left">
+                <div class="col-lg-4 mx-auto">
                     <div class="card border-0">
                         <img src="{{ asset('assets/images/futsal.png') }}" class="img-fluid mb-3" alt=""
                             style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
@@ -47,7 +47,7 @@
 
             </div>
             <div class="row py-5">
-                <div class="col-lg-4 mx-auto mb-3" data-aos="fade-down-left">
+                <div class="col-lg-4 mx-auto mb-3">
                     <div class="card border-0">
                         <img src="{{ asset('assets/images/pmr.png') }}" class="img-fluid mb-3" alt=""
                             style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mx-auto" data-aos="fade-down-left">
+                <div class="col-lg-4 mx-auto">
                     <div class="card border-0">
                         <img src="{{ asset('assets/images/voli.png') }}" class="img-fluid mb-3" alt=""
                             style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mx-auto" data-aos="fade-down-left">
+                <div class="col-lg-4 mx-auto">
                     <div class="card border-0">
                         <img src="{{ asset('assets/images/pa.png') }}" class="img-fluid mb-3" alt=""
                             style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
@@ -83,10 +83,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="footer-berita text-center">
-                <a href="" class="btn btn-outline-success">{{ __('Extraculicular More') }}</a>
             </div>
         </div>
     </section>

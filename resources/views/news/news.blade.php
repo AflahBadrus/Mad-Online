@@ -9,7 +9,7 @@
             </div>
             <div class="row py-5 mb-3">
                 @foreach ($artikels as $item)
-                    <div class="col-lg-4" data-aos="fade-down-right">
+                    <div class="col-lg-4">
                         <div class="card border-0">
                             <img src="{{ asset('storage/artikel/' . $item->image) }}" class="img-fluid mb-3" alt=""
                                 style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">

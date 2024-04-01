@@ -4,8 +4,8 @@
     {{-- Hero --}}
     <section id="hero">
         <div class="container text-center text-white py-5">
-            <div class="hero-title" data-aos="fade-up-right">
-                <div class="hero-text">{{ __('Welcome To') }} <br> {{ __('Mading of SMK N 1 Bangsri') }}</div>
+            <div class="hero-title">
+                <div class="hero-text">{{ __('Selamat Datang') }} <br> {{ __('Mading Smk Negeri 1 Bangsri') }}</div>
             </div>
         </div>
 
@@ -57,24 +57,24 @@
     <section>
         <div class="container mx-6 py-5">
             <div class="row">
-                <div class="col mx-3" data-aos="fade-up-right">
-                    <img src="{{ asset('assets/images/jurusanto.png') }}" class="img-fluid" width="100" height="100"
+                <div class="col-lg-2 col-md-6 mb-3 mx-3 " data-aos="fade-up-right">
+                    <img src="{{ asset('assets/images/jurusanto.png') }}" class="img-fluid" width="130" height="130"
                         alt="">
                 </div>
-                <div class="col mx-3" data-aos="fade-down-left">
-                    <img src="{{ asset('assets/images/jurusanrpl.png') }}" class="img-fluid" width="100" height="100"
+                <div class="col-lg-2 col-md-6 mb-3 mx-3 " data-aos="fade-down-left">
+                    <img src="{{ asset('assets/images/jurusanrpl.png') }}" class="img-fluid" width="120" height="120"
                         alt="">
                 </div>
-                <div class="col mx-3" data-aos="fade-up">
-                    <img src="{{ asset('assets/images/jurusanakl.png') }}" class="img-fluid" width="120" height="120"
+                <div class="col-lg-2 col-md-6 mb-3 mx-3 " data-aos="fade-up">
+                    <img src="{{ asset('assets/images/jurusanakl.png') }}" class="img-fluid" width="140" height="140"
                         alt="">
                 </div>
-                <div class="col mx-3" data-aos="fade-down-right">
-                    <img src="{{ asset('assets/images/jurusanotkp.png') }}" class="img-fluid" width="120" height="120"
+                <div class="col-lg-2 col-md-6 mb-3 mx-3 " data-aos="fade-down-right">
+                    <img src="{{ asset('assets/images/jurusanotkp.png') }}" class="img-fluid" width="140" height="140"
                         alt="">
                 </div>
-                <div class="col mx-3" data-aos="fade-up-left">
-                    <img src="{{ asset('assets/images/jurusanpm.png') }}" class="img-fluid" width="120" height="120"
+                <div class="col-lg-2 col-md-6 mb-3 mx-3 " data-aos="fade-up-left">
+                    <img src="{{ asset('assets/images/jurusanpm.png') }}" class="img-fluid" width="140" height="140"
                         alt="">
                 </div>
             </div>
@@ -90,7 +90,7 @@
             </div>
             <div class="row py-5">
                 @foreach ($artikels as $item)
-                    <div class="col-lg-4" data-aos="fade-down-right">
+                    <div class="col-lg-4">
                         <div class="card border-0">
                             <img src="{{ asset('storage/artikel/' . $item->image) }}" class="img-fluid mb-3" alt=""
                                 style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
@@ -98,27 +98,27 @@
                                 <p class="mb-3 text-secondary">{{ $item->created_at }}</p>
                                 <h4 class="fw-bold mb-3">{{ $item->judul }}</h4>
                                 <p class="text-secondary">#Madonsmkn1bangsri</p>
-                                <a href="/detail" class="text-decoration-none text-primary">{{ __('More') }}</a>
+                                <a href="/detail" class="text-decoration-none text-primary">{{ __('Selengkapnya') }}</a>
                             </div>
                         </div>
                     </div>
                 @endforeach
             </div>
             <div class="footer-berita text-center">
-                <a href="/news" class="btn btn-outline-success">{{ __('News More') }}</a>
+                <a href="/news" class="btn btn-outline-success">{{ __('Berita Selengkapnya') }}</a>
             </div>
         </div>
     </section>
     {{-- News --}}
 
     {{-- Extracurricular --}}
-    <section id="ekstra" class="py-5" data-aos="fade-up-left">
+    <section id="ekstra" class="py-5">
         <div class="container py-5">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 ">
                     <div class="d-flex align-items-center mb-3">
                         <div class="stripe me-3"></div>
-                        <h5>{{ __('Extracurricular') }}</h5>
+                        <h5>{{ __('Ekstrakulikuler') }}</h5>
                     </div>
                     <h1 class="py-3 fw-bold">
                         {{ __('Join The Extracurricular Be The Next Generation According to your interests ') }}</h1>
@@ -136,11 +136,11 @@
 
     {{-- Activity Photo --}}
     <section id="photo" class=" section-foto paralax py-5">
-        <div class="container py-5" data-aos="fade-down-right">
+        <div class="container py-5">
             <div class="d-flex justify-content-between align-itmes-center">
                 <div class="d-flex align-items-center">
                     <div class="stripe-primary me-3"></div>
-                    <h5 class="fw-bold text-white">{{ __('Activity School Photo') }}</h2>
+                    <h5 class="fw-bold text-white">{{ __('Foto Kegiatan Sekolah') }}</h2>
 
                 </div>
                 <div class="">
