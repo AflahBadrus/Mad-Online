@@ -80,8 +80,7 @@ body{
 }
 
 .section-foto{
-    background-attachment: fixed;
-    background-position: top;
+    background-position: center;
     background-size: cover;
     height: 500px;
     width: 100%;

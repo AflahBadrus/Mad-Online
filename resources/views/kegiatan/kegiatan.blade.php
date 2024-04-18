@@ -12,7 +12,7 @@
                                 <div class="col">
                                     <img src="{{ asset('storage/photo/' . $item->image) }}" class="img-fluid mb-5"
                                         height="300" width="300" alt=""
-                                        style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
+                                        style="aspect-ratio: 16/9; object-fit:cover; border-radius:5px">
                                 </div>
                             @endforeach
 

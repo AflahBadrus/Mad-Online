@@ -8,22 +8,20 @@
 
             <div class="row justify-content-center p-4">
                 <div class="col-lg-4 mx-7">
-                    <div class="card rounded-3 border-0 px-5">
-                        <img src="{{ asset('assets/images/berita5.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
+                    <div class="card rounded-3 border-1 p-2 mb-3 px-5">
+                        <div class="card-body text-center">
                             <h5 class="card-title">{{ __('Blog Article') }}</h5>
-                            <p class="card-text">{{ __('Organize and Manage School Activity Articles') }}</p>
-                            <a href="{{ route('blog') }}" class="btn btn-primary">{{ __('Create') }}</a>
+                            <p class="card-text">{{ __('Organize and Manage Blog Articles') }}</p>
+                            <a href="{{ route('blog') }}" class="btn btn-success">{{ __('Create') }}</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card rounded-3 border-0 px-5">
-                        <img src="{{ asset('assets/images/berita.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
+                <div class="col-lg-4 mx-7">
+                    <div class="card rounded-3 border-1 p-2 mb-3 px-5">
+                        <div class="card-body text-center">
                             <h5 class="card-title">{{ __('Photo Activity') }}</h5>
-                            <p class="card-text">{{ __('Organize and Manage School Activity Articles') }}</p>
-                            <a href="{{ route('photo') }}" class="btn btn-primary">{{ __('Create') }}</a>
+                            <p class="card-text">{{ __('Organize and Manage Photo Articles') }}</p>
+                            <a href="{{ route('photo') }}" class="btn btn-success">{{ __('Create') }}</a>
                         </div>
                     </div>
                 </div>

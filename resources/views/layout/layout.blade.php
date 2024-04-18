@@ -37,13 +37,15 @@
                         <div class="d-flex">
                             <ul class="nav flex-column me-5">
                                 <li class="nav-item mb-2"><a href="/"
-                                        class="nav-link p-0 text-muted">{{ __('Home') }}</a></li>
+                                        class="nav-link p-0 text-muted text-success">{{ __('Home') }}</a></li>
                                 <li class="nav-item mb-2"><a href="/news"
-                                        class="nav-link p-0 text-muted">{{ __('News New') }}</a></li>
+                                        class="nav-link p-0 text-muted text-success">{{ __('News New') }}</a></li>
                                 <li class="nav-item mb-2"><a href="/extra"
-                                        class="nav-link p-0 text-muted">{{ __('Extracurricular') }}</a></li>
+                                        class="nav-link p-0 text-muted text-success">{{ __('Extracurricular') }}</a>
+                                </li>
                                 <li class="nav-item mb-2"><a href="/kegiatan"
-                                        class="nav-link p-0 text-muted">{{ __('Activity School Photo') }}</a></li>
+                                        class="nav-link p-0 text-muted text-success">{{ __('Activity School Photo') }}</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -53,10 +55,10 @@
                             <a
                                 href="https://www.instagram.com/smkn1bangsri.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
                                     src="{{ asset('assets/images/ig.png') }}" width="22" height="22"
-                                    class="img fluid mx-3" alt="">Instagram</a>
+                                    class="img fluid mx-3" alt=""></a>
                             <a href="https://www.youtube.com/@SMKN1BANGSRI"><img
                                     src="{{ asset('assets/images/yt.png') }}" width="28" height="22"
-                                    class="img fluid" alt="">Youtube</a>
+                                    class="img fluid" alt=""></a>
 
                         </div>
                     </div>
@@ -67,7 +69,7 @@
                         <p class="">{{ __('Phone : ( 291 ) 772321') }}</p>
                     </div>
                     <div class="col-12 col-md-3 mb-3">
-                        <h5 class="fw-bold mb-3">{{ __('Addres') }}</h5>
+                        <h5 class="fw-bold">{{ __('Address') }}</h5>
                         <p class="">Alamat : JL. KH. Achmad Fauzan <br> No. 17 Bangsri Jepara</p>
 
                     </div>

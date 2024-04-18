@@ -94,11 +94,14 @@
                         <div class="card border-0">
                             <img src="{{ asset('storage/artikel/' . $item->image) }}" class="img-fluid mb-3" alt=""
                                 style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
-                            <div class="content-news">
+                            <div class="content-news py-2">
                                 <p class="mb-3 text-secondary">{{ $item->created_at }}</p>
                                 <h4 class="fw-bold mb-3">{{ $item->judul }}</h4>
+                            </div>
+                            <div class="content-news py-2">
                                 <p class="text-secondary">#Madonsmkn1bangsri</p>
                                 <a href="/detail" class="text-decoration-none text-primary">{{ __('Selengkapnya') }}</a>
+
                             </div>
                         </div>
                     </div>
@@ -117,7 +120,7 @@
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 ">
                     <div class="d-flex align-items-center mb-3">
-                        <div class="stripe me-3"></div>
+                        <div class="stripe me-2"></div>
                         <h5>{{ __('Ekstrakulikuler') }}</h5>
                     </div>
                     <h1 class="py-3 fw-bold">
@@ -135,16 +138,16 @@
     {{-- Extracurricular --}}
 
     {{-- Activity Photo --}}
-    <section id="photo" class=" section-foto paralax py-5">
+    <section id="photo" class=" section-foto paralax py-2">
         <div class="container py-5">
             <div class="d-flex justify-content-between align-itmes-center">
                 <div class="d-flex align-items-center">
-                    <div class="stripe-primary me-3"></div>
-                    <h5 class="fw-bold text-white">{{ __('Foto Kegiatan Sekolah') }}</h2>
+                    <div class="stripe-primary me-2"></div>
+                    <h5 class="fw-bold text-white py-3">{{ __('Foto Kegiatan Sekolah') }}</h2>
 
                 </div>
                 <div class="">
-                    <a href="/kegiatan" class="btn btn-outline-primary text center mb-3">{{ __('View All ') }}</a>
+                    <a href="/kegiatan" class="btn btn-outline-danger text center mb-3">{{ __('View All ') }}</a>
                 </div>
             </div>
             <div class="row justify-content-center">
