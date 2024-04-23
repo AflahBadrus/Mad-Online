@@ -55,10 +55,13 @@
                             <a
                                 href="https://www.instagram.com/smkn1bangsri.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
                                     src="{{ asset('assets/images/ig.png') }}" width="22" height="22"
-                                    class="img fluid mx-3" alt=""></a>
+                                    class="img fluid mx-2" alt=""></a>
                             <a href="https://www.youtube.com/@SMKN1BANGSRI"><img
                                     src="{{ asset('assets/images/yt.png') }}" width="28" height="22"
-                                    class="img fluid" alt=""></a>
+                                    class="img fluid mx-2" alt=""></a>
+                            <a href="https://www.facebook.com/pages/Smk-Negeri-1-Bangsri/123509761313684"><img
+                                    src="{{ asset('assets/images/fb.png') }}" width="27" height="27"
+                                    class="img fluid mx-2" alt=""></a>
 
                         </div>
                     </div>

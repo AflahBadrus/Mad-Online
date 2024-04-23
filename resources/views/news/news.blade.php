@@ -18,7 +18,7 @@
                                 <h4 class="fw-bold mb-3">{{ $item->judul }}</h4>
                                 <p class="text-secondary">#Madonsmkn1bangsri</p>
                                 <a href="/detail/{{ $item->slug }}"
-                                    class="text-decoration-none text-primary">{{ __('More') }}</a>
+                                    class="text-decoration-none text-secondary">{{ __('Selengkapnya') }}</a>
                             </div>
                         </div>
                     </div>

@@ -43,7 +43,7 @@
                 <div class="col-lg-3 col-md-6 mb-3" data-aos="fade-up-left">
                     <div class="bg-white rounded-3 mb-3 p-3 shadow d-flex justify-content-between align-items-center">
                         <div>
-                            <p class="fw-bold">Pendidikan <br> Berkualitas</p>
+                            <p class="fw-bold">{{ __('Skills') }} <br> {{ __('Creative') }}</p>
                         </div>
                         <img src="{{ asset('assets/images/photo1.png') }}" height="55" width="55" alt="">
                     </div>
@@ -100,7 +100,8 @@
                             </div>
                             <div class="content-news py-2">
                                 <p class="text-secondary">#Madonsmkn1bangsri</p>
-                                <a href="/detail" class="text-decoration-none text-primary">{{ __('Selengkapnya') }}</a>
+                                <a href="/detail/{{ $item->slug }}"
+                                    class="text-decoration-none text-secondary">{{ __('Selengkapnya') }}</a>
 
                             </div>
                         </div>
@@ -108,7 +109,7 @@
                 @endforeach
             </div>
             <div class="footer-berita text-center">
-                <a href="/news" class="btn btn-outline-success">{{ __('Berita Selengkapnya') }}</a>
+                <a href="{{ route('news') }}" class="btn btn-outline-success">{{ __('Berita Selengkapnya') }}</a>
             </div>
         </div>
     </section>
@@ -128,7 +129,7 @@
                     <p class="mb-3">
                         {{ __('Are you confused about what extracurricular to choose? The first way is to choose extracurriculars that match your hobbies, interests, talents or abilities. Extracurriculars are basically used to channel and develop the abilities they have so that they develop further and can be used in the future.') }}
                     </p>
-                    <a href="/extra" class="btn btn-outline-primary">{{ __('More') }}</a>
+                    <a href="/extra" class="btn btn-outline-primary">{{ __('Selengkapnya') }}</a>
                 </div>
                 <div class="col-lg-6">
                     <img src="{{ asset('assets/images/ekstraduo.png') }}" class="img-fluid" alt="">
@@ -147,7 +148,8 @@
 
                 </div>
                 <div class="">
-                    <a href="/kegiatan" class="btn btn-outline-danger text center mb-3">{{ __('View All ') }}</a>
+                    <a href="{{ route('kegiatan') }}"
+                        class="btn btn-outline-danger text center mb-3">{{ __('Lihat Semua ') }}</a>
                 </div>
             </div>
             <div class="row justify-content-center">

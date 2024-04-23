@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [AppController::class, 'index']);
 
-Route::get('/news', [AppController::class, 'news']);
+Route::get('/news', [AppController::class, 'news'])->name('news');
 Route::get('/detail/{slug}', [AppController::class, 'detail'])->name('detail');
 
 Route::get('/extra', function () {
