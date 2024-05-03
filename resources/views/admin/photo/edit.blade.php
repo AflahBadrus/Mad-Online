@@ -4,18 +4,18 @@
     <section class="py-5" style="margin-top: 100px">
         <div class="container col-xxl-8">
             <div class="d-flex">
-                <a href="{{ route('blog') }}">Blog</a>
-                <div class="mx-1"> . </div>
-                <a href="{{ route('blog.create') }}">Edit Blog</a>
+                <a href="{{ route('blog') }}">{{ __('Blog') }}</a>
+                <div class="mx-1"> </div>
+                <a href="{{ route('blog.create') }}">{{ __('Edit Blog') }}</a>
 
             </div>
 
-            <h4>Halaman Edit Photo</h4>
+            <h4>{{ __('Halaman Edit Photo') }}</h4>
 
             <form action="{{ route('photo') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group mb-4">
-                    <label for="">Masukan Judul Artikel</label>
+                    <label for="">{{ __('Masukan Judul Artikel') }}</label>
                     <input type="text" name="judul" class="form-control @error('judul') is-invalid @enderror"
                         value="{{ old('judul') }}">
 
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="form-group mb-4">
-                    <label for="">Pilih Foto Kegiatan</label>
+                    <label for="">{{ __('Pilih Foto Kegiatan') }}</label>
                     <input type="file" name="image" class="form-control @error('image') is-invalid @enderror">
 
                     @error('image')
@@ -37,7 +37,7 @@
                     @enderror
                 </div>
 
-                <button type="submit" class="btn btn-success">Simpan</button>
+                <button type="submit" class="btn btn-success">{{ __('Simpan') }}</button>
             </form>
 
         </div>

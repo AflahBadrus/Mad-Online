@@ -5,7 +5,7 @@
     <section id="news" style="margin-top: 100px" class="py-5">
         <div class="container py-5 mb-3">
             <div class="header-news text-center">
-                <h2 class="fw-bold">{{ __('News New') }}</h3>
+                <h2 class="fw-bold">{{ __('Berita Terkini') }}</h3>
             </div>
             <div class="row py-5 mb-3">
                 @foreach ($artikels as $item)
@@ -16,9 +16,9 @@
                             <div class="content-news">
                                 <p class="mb-3 text-secondary">{{ $item->created_at }}</p>
                                 <h4 class="fw-bold mb-3">{{ $item->judul }}</h4>
-                                <p class="text-secondary">#Madonsmkn1bangsri</p>
+                                <p class="text-secondary mb-3">#Madonsmkn1bangsri</p>
                                 <a href="/detail/{{ $item->slug }}"
-                                    class="text-decoration-none text-secondary">{{ __('Selengkapnya') }}</a>
+                                    class="text-decoration-none text-secondary mb-3">{{ __('Selengkapnya') }}</a>
                             </div>
                         </div>
                     </div>

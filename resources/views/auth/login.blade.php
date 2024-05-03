@@ -3,17 +3,17 @@
 @section('content')
     <section style="margin-top: 100px">
         <div class="container py-5">
-            <h3 class="fw-bold mb-3">{{ __('Login Admin Page') }}</h3>
+            <h3 class="fw-bold mb-3">{{ __('Halaman Login Admin') }}</h3>
 
             <form action="/login" method="POST">
                 @csrf
                 <div class="form-group mb-3">
-                    <label for="">{{ __('Enter Email') }}</label>
+                    <label for="">{{ __('Masukkan Email') }}</label>
                     <input type="email" name="email" class="form-control">
                 </div>
 
                 <div class="form-group mb-3">
-                    <label for="">{{ __('Enter Password') }}</label>
+                    <label for="">{{ __('Masukan Password') }}</label>
                     <input type="password" name="password" class="form-control">
                 </div>
 

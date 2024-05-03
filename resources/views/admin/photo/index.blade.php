@@ -65,7 +65,7 @@
                                         @csrf
                                         <a href="#" class="btn btn-danger"
                                             data-bs-target="#deleteModal{{ $item->id }}"
-                                            data-bs-toggle="modal">Delete</a>
+                                            data-bs-toggle="modal">Hapus</a>
                                     </form>
                                 </td>
                             </tr>
@@ -93,11 +93,6 @@
                                                     <input type="hidden" name="old_image" value="{{ $item->id }}">
                                                     <input type="file" name="image" class="form-control">
                                                 </div>
-                                                <div class="form-group mb-3">
-                                                    <label for="">Nama Kegiatan</label>
-                                                    <input type="text" name="judul" class="form-control"
-                                                        value="{{ $item->judul }}">
-                                                </div>
 
                                                 <button type="submit" class="btn btn-warning">Update</button>
                                             </form>
@@ -124,8 +119,7 @@
                                                     Apakah Kamu Yakin Foto Ini Dihapus?
                                                 </div>
 
-                                                <button type="submit"
-                                                    class="btn btn-danger">{{ __('Delete') }}</button>
+                                                <button type="submit" class="btn btn-danger">{{ __('Hapus') }}</button>
                                             </form>
                                         </div>
                                     </div>
@@ -154,10 +148,6 @@
                         <div class="form-group mb-3">
                             <label for="">Pilih Photo</label>
                             <input type="file" name="image" class="form-control">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="">Nama Kegiatan</label>
-                            <input type="text" name="judul" class="form-control">
                         </div>
 
                         <button type="submit" class="btn btn-success">Simpan</button>

@@ -25,14 +25,6 @@ body{
     margin-right: 5px;
 }
 
-.scroll-nav-active{
-    background-color: white;
-    /* border-bottom: 1px solid #26991b00; */
-    box-shadow: 1px 1px 11px -1px rgba(1, 1, 1,0.08);
-}
-.text-nav-active{
-    color: black;
-}
 
 #hero {
     background-image: url('../../assets/images/photo1.jpeg');

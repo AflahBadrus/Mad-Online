@@ -6,12 +6,12 @@
             <div class="d-flex">
                 <a href="{{ route('blog') }}">{{ __('Blog') }}</a>
                 <div class="mx-1"> . </div>
-                <a href="{{ route('blog.create') }}">{{ __('Create Blog') }}</a>
+                <a href="{{ route('blog.create') }}">{{ __('Edit Blog') }}</a>
 
             </div>
-            <h4>{{ __('Blog Article Page') }}</h4>
+            <h4>{{ __('Halaman Artikel Blog') }}</h4>
 
-            <a href="{{ route('blog.create') }}" class="btn btn-success py-2 mb-3">{{ __('Create Article') }}</a>
+            <a href="{{ route('blog.create') }}" class="btn btn-success py-2 mb-3">{{ __('Buat Artikel') }}</a>
 
             @if (session()->has('success'))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -51,9 +51,29 @@
                                     <form action="{{ route('blog.destroy', $artikel->id) }}" method="POST"
                                         class="d-inline">
                                         @csrf
-                                        <a href="{{ route('blog.destroy', $artikel->id) }}" class="btn btn-danger"
+                                        <button onclick="deleteModal()" type="button" data-bs-toggle="modal"
                                             data-bs-target="#deleteModal{{ $artikel->id }}"
-                                            data-bs-toggle="modal">{{ __('Delete') }}</a>
+                                            class="btn btn-danger">Hapus</button>
+
+                                        <div class="modal" id="deleteModal{{ $artikel->id }}" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">{{ __('Delete') }}</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        {{ __('Apakah Kamu Yakin Mau Menghapus Artikel Ini ') }}<b>{{ $artikel->judul }}.</b>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button type="submit" class="btn btn-danger">Hapus</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </form>
                                 </td>
                             </tr>
@@ -65,7 +85,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="deleteModalLabel">{{ __('Confirm Delete') }}</h5>
+                                <h5 class="modal-title" id="deleteModalLabel">{{ __('Konfirmasi Hapus') }}</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>

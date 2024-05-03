@@ -5,7 +5,7 @@
     <section id="news" style="margin-top: 100px" class="py-5">
         <div class="container py-5">
             <div class="header-news text-center">
-                <h2 class="fw-bold">{{ __('Extraculicular') }}</h3>
+                <h2 class="fw-bold">{{ __('Ekstrakulikuler') }}</h3>
             </div>
             <div class="row py-5">
                 <div class="col-lg-4 mx-auto">
@@ -14,9 +14,9 @@
                             style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
                         <div class="content-news">
                             <p class="mb-3 text-secondary">21/2/2024</p>
-                            <h4 class="fw-bold mb-3">{{ __('Scout') }}</h4>
+                            <h4 class="fw-bold mb-3">{{ __('Pramuka') }}</h4>
                             <p class="text-secondary">#Madonsmkn1bangsri</p>
-                            <a href="/extra/pramuka" class="text-decoration-none text-primary">{{ __('More') }}</a>
+                            <a href="/extra/pramuka" class="text-decoration-none text-primary">{{ __('Selengkapnya') }}</a>
                         </div>
                     </div>
                 </div>
@@ -26,9 +26,9 @@
                             style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
                         <div class="content-news">
                             <p class="mb-3 text-secondary">21/2/2024</p>
-                            <h4 class="fw-bold mb-3">{{ __('Journalism') }}</h4>
+                            <h4 class="fw-bold mb-3">{{ __('Jurnalistik') }}</h4>
                             <p class="text-secondary">#Madonsmkn1bangsri</p>
-                            <a href="/extra/jurnal" class="text-decoration-none text-primary">{{ __('More') }}</a>
+                            <a href="/extra/jurnal" class="text-decoration-none text-primary">{{ __('Selengkapnya') }}</a>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                             <p class="mb-3 text-secondary">21/2/2024</p>
                             <h4 class="fw-bold mb-3">{{ __('Futsal') }}</h4>
                             <p class="text-secondary">#Madonsmkn1bangsri</p>
-                            <a href="/extra/futsal" class="text-decoration-none text-primary">{{ __('More') }}</a>
+                            <a href="/extra/futsal" class="text-decoration-none text-primary">{{ __('Selengkapnya') }}</a>
                         </div>
                     </div>
                 </div>
@@ -53,9 +53,9 @@
                             style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
                         <div class="content-news">
                             <p class="mb-3 text-secondary">21/2/2024</p>
-                            <h4 class="fw-bold mb-3">{{ __('Red Cross Teen') }}</h4>
+                            <h4 class="fw-bold mb-3">{{ __('Palam Merah Remaja') }}</h4>
                             <p class="text-secondary">#Madonsmkn1bangsri</p>
-                            <a href="/extra/pmr" class="text-decoration-none text-primary">{{ __('More') }}</a>
+                            <a href="/extra/pmr" class="text-decoration-none text-primary">{{ __('Selengkapnya') }}</a>
                         </div>
                     </div>
                 </div>
@@ -65,9 +65,9 @@
                             style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
                         <div class="content-news">
                             <p class="mb-3 text-secondary">21/2/2024</p>
-                            <h4 class="fw-bold mb-3">{{ __('Volly Ball') }}</h4>
+                            <h4 class="fw-bold mb-3">{{ __('Bola Voli') }}</h4>
                             <p class="text-secondary">#Madonsmkn1bangsri</p>
-                            <a href="/extra/voli" class="text-decoration-none text-primary">{{ __('More') }}</a>
+                            <a href="/extra/voli" class="text-decoration-none text-primary">{{ __('Selengkapnya') }}</a>
                         </div>
                     </div>
                 </div>
@@ -77,9 +77,9 @@
                             style="aspect-ratio: 1/1; object-fit:cover; border-radius:10px">
                         <div class="content-news">
                             <p class="mb-3 text-secondary">21/2/2024</p>
-                            <h4 class="fw-bold mb-3">{{ __('Nature lovers') }}</h4>
+                            <h4 class="fw-bold mb-3">{{ __('Pecinta Alam') }}</h4>
                             <p class="text-secondary">#Madonsmkn1bangsri</p>
-                            <a href="/extra/pa" class="text-decoration-none text-primary">{{ __('More') }}</a>
+                            <a href="/extra/pa" class="text-decoration-none text-primary">{{ __('Selengkapnya') }}</a>
                         </div>
                     </div>
                 </div>

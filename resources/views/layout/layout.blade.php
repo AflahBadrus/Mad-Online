@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.css" />
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
-    <title>Mad Online</title>
+    <title>{{ __('Mad Online') }}</title>
 
 </head>
 
@@ -39,12 +39,12 @@
                                 <li class="nav-item mb-2"><a href="/"
                                         class="nav-link p-0 text-muted text-success">{{ __('Home') }}</a></li>
                                 <li class="nav-item mb-2"><a href="/news"
-                                        class="nav-link p-0 text-muted text-success">{{ __('News New') }}</a></li>
+                                        class="nav-link p-0 text-muted text-success">{{ __('News') }}</a></li>
                                 <li class="nav-item mb-2"><a href="/extra"
                                         class="nav-link p-0 text-muted text-success">{{ __('Extracurricular') }}</a>
                                 </li>
                                 <li class="nav-item mb-2"><a href="/kegiatan"
-                                        class="nav-link p-0 text-muted text-success">{{ __('Activity School Photo') }}</a>
+                                        class="nav-link p-0 text-muted text-success">{{ __('Activity Photo') }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -73,7 +73,8 @@
                     </div>
                     <div class="col-12 col-md-3 mb-3">
                         <h5 class="fw-bold">{{ __('Address') }}</h5>
-                        <p class="">Alamat : JL. KH. Achmad Fauzan <br> No. 17 Bangsri Jepara</p>
+                        <p class="">Alamat</p>
+                        <p class="">JL. KH. Achmad Fauzan <br> No. 17 Bangsri Jepara</p>
 
                     </div>
                 </div>

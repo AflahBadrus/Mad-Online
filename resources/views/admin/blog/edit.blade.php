@@ -7,10 +7,10 @@
             <div class="d-flex">
                 <a href="{{ route('blog') }}">{{ __('Blog') }}</a>
                 <div class="mx-1"> . </div>
-                <a href="">{{ __('Edit Article') }}</a>
+                <a href="">{{ __('Buat Artikel') }}</a>
             </div>
 
-            <h4 class="fw-bold mb-3">{{ __('Edit Article Page') }}</h4>
+            <h4 class="fw-bold mb-3">{{ __('Halaman Edit Artikel') }}</h4>
 
             <form action="{{ route('blog.update', $artikel->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
