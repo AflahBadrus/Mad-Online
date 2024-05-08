@@ -33,24 +33,24 @@
             <footer>
                 <div class="row">
                     <div class="col-12 col-md-3 mb-3">
-                        <h5 class="fw-bold mb-3">{{ __('Navigation') }}</h5>
+                        <h5 class="fw-bold mb-3">{{ __('Navigasi') }}</h5>
                         <div class="d-flex">
                             <ul class="nav flex-column me-5">
                                 <li class="nav-item mb-2"><a href="/"
-                                        class="nav-link p-0 text-muted text-success">{{ __('Home') }}</a></li>
+                                        class="nav-link p-0 text-muted text-success">{{ __('Beranda') }}</a></li>
                                 <li class="nav-item mb-2"><a href="/news"
-                                        class="nav-link p-0 text-muted text-success">{{ __('News') }}</a></li>
+                                        class="nav-link p-0 text-muted text-success">{{ __('Berita') }}</a></li>
                                 <li class="nav-item mb-2"><a href="/extra"
-                                        class="nav-link p-0 text-muted text-success">{{ __('Extracurricular') }}</a>
+                                        class="nav-link p-0 text-muted text-success">{{ __('Ekstrakulikuller') }}</a>
                                 </li>
                                 <li class="nav-item mb-2"><a href="/kegiatan"
-                                        class="nav-link p-0 text-muted text-success">{{ __('Activity Photo') }}</a>
+                                        class="nav-link p-0 text-muted text-success">{{ __('Foto Kegiatan') }}</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-12 col-md-3 mb-6">
-                        <h5 class="fw-bold mb-3">{{ __('Our Follow') }}</h5>
+                        <h5 class="fw-bold mb-3">{{ __('Ikuti Sosmed Kami') }}</h5>
                         <div class="d-flex mb-3 py-2">
                             <a
                                 href="https://www.instagram.com/smkn1bangsri.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
@@ -66,13 +66,13 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-3 mb-3">
-                        <h5 class="fw-bold">{{ __('Contact Us') }}</h5>
+                        <h5 class="fw-bold">{{ __('Kontak Kami') }}</h5>
                         <p class="">Email</p>
                         <p class="">smkn1bangsri@yahoo.co.id</p>
                         <p class="">{{ __('Phone : ( 291 ) 772321') }}</p>
                     </div>
                     <div class="col-12 col-md-3 mb-3">
-                        <h5 class="fw-bold">{{ __('Address') }}</h5>
+                        <h5 class="fw-bold">{{ __('Alamat') }}</h5>
                         <p class="">Alamat</p>
                         <p class="">JL. KH. Achmad Fauzan <br> No. 17 Bangsri Jepara</p>
 

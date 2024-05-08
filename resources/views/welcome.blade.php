@@ -89,14 +89,15 @@
     <section id="news">
         <div class="container py-5">
             <div class="header-news text-center">
-                <h2 class="fw-bold">{{ __('News New') }}</h3>
+                <h2 class="fw-bold">{{ __('Berita Terkini') }}</h3>
             </div>
             <div class="row py-5">
                 @foreach ($artikels as $item)
                     <div class="col-lg-4">
                         <div class="card border-0">
-                            <img src="{{ asset('storage/artikel/' . $item->image) }}" class="img-fluid mb-3" alt=""
-                                style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
+                            <a href="/detail/{{ $item->slug }}"><img
+                                    src="{{ asset('storage/artikel/' . $item->image) }}" class="img-fluid mb-3"
+                                    alt="" style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px"></a>
                             <div class="content-news py-2">
                                 <p class="mb-3 text-secondary">{{ $item->created_at->format('d M Y') }}</p>
                                 <a href="/detail/{{ $item->slug }}" class="text-decoration-none text-black">
@@ -144,22 +145,22 @@
     {{-- Extracurricular --}}
 
     {{-- Activity Photo --}}
-    <section id="photo" class=" section-foto paralax py-2">
+    <section id="photo" class=" section-foto py-2">
         <div class="container py-5">
             <div class="d-flex justify-content-between align-itmes-center">
                 <div class="d-flex align-items-center">
                     <div class="stripe-primary me-2"></div>
-                    <h5 class="fw-bold text-white py-3">{{ __('Foto Kegiatan Sekolah') }}</h2>
+                    <h5 class="fw-bold text-black py-3">{{ __('Foto Kegiatan Sekolah') }}</h2>
 
                 </div>
                 <div class="">
                     <a href="{{ route('kegiatan') }}"
-                        class="btn btn-danger text center mb-3">{{ __('Lihat Semua ') }}</a>
+                        class="btn btn-danger text-center mb-3">{{ __('Lihat Semua') }}</a>
                 </div>
             </div>
             <div class="row justify-content-center">
                 @foreach ($photos as $item)
-                    <div class="col-lg-3 col-md-6 col-3 mx-2">
+                    <div class="col-3 mx-2">
                         <a href="" class="image-link">
 
                             <img src="{{ asset('storage/photo/' . $item->image) }}" class="img-fluid" alt=""

@@ -17,12 +17,10 @@ class PhotoController extends Controller
     public function store(Request $request)
     {
         $rules = [
-            'judul' => 'required',
             'image' => 'required|max:1000|mimes:jpg,jpeg,png,webp',
         ];
 
         $messages = [
-            'judul.required' => 'Judul wajib diisi!',
             'image.required' => 'Image wajib diisi!',
         ];
 
@@ -33,7 +31,6 @@ class PhotoController extends Controller
         $request->file('image')->storeAs('public/photo', $fileName);
 
         Photo::create([
-            'judul' => $request->judul,
             'image' => $fileName,
         ]);
 
@@ -52,12 +49,10 @@ class PhotoController extends Controller
         }
 
         $rules = [
-            'judul' => 'required',
             'image' => $fileCheck,
         ];
 
         $messages = [
-            'judul.required' => 'Judul wajib diisi!',
             'image.required' => 'Judul wajib diisi!',
         ];
 
@@ -78,7 +73,6 @@ class PhotoController extends Controller
             $checkFileName = $request->old_image;
         }
         $photo->update([
-            'judul' => $request->judul,
             'image' => $checkFileName,
         ]);
 

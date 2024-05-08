@@ -21,17 +21,7 @@
                 </li>
 
             </ul>
-            <div class="">
-                @auth
-                    <form action="/logout" method="POST">
-                        @csrf
-                        <button type="submit" class="btn btn-outline-danger">{{ __('Logout') }}</button>
-                    </form>
-                @else
-                    <a href="/login"><button class="btn btn-success">{{ __('Login') }}</button></a>
 
-                @endauth
-            </div>
         </div>
     </div>
 </nav>

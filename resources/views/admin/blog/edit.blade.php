@@ -5,9 +5,6 @@
         <div class="container col-xxl-8">
 
             <div class="d-flex">
-                <a href="{{ route('blog') }}">{{ __('Blog') }}</a>
-                <div class="mx-1"> . </div>
-                <a href="">{{ __('Buat Artikel') }}</a>
             </div>
 
             <h4 class="fw-bold mb-3">{{ __('Halaman Edit Artikel') }}</h4>

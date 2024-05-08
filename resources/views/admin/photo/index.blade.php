@@ -3,12 +3,6 @@
 @section('content')
     <section class="py-5" style="margin-top: 100px">
         <div class="container col-xxl-8">
-            <div class="d-flex">
-                <a href="{{ route('blog') }}">Blog</a>
-                <div class="mx-1"> . </div>
-                <a href="">Upload Foto</a>
-
-            </div>
             <h4>Halaman Photo Kegiatan</h4>
 
             <a href="" class="btn btn-success py-2" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload
@@ -37,7 +31,7 @@
                         <tr>
                             <th>#</th>
                             <th>Image</th>
-                            <th>Kegiatan</th>
+
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -52,10 +46,6 @@
                                 </td>
                                 <td>
                                     <img src="{{ asset('storage/photo/' . $item->image) }}" height="150" alt="">
-                                </td>
-
-                                <td>
-                                    {{ $item->judul }}
                                 </td>
 
                                 <td>
@@ -110,7 +100,7 @@
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <form action="{{ route('blog.destroy', $item->id) }}" method="POST"
+                                            <form action="{{ route('photo.destroy', $item->id) }}" method="POST"
                                                 enctype="multipart/form-data">
                                                 @csrf
                                                 <input type="hidden" name="id_photo" value="{{ $item->id }}">

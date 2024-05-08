@@ -27,7 +27,7 @@ body{
 
 
 #hero {
-    background-image: url('../../assets/images/photo1.jpeg');
+    background-image: url('/assets/images/photo1.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -81,9 +81,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.paralax{
-    background-image: url('../../assets/images/photo.jpeg');
-}
+
 
 .stripe-primary{
     height: 5px;

@@ -4,9 +4,6 @@
     <section class="py-5" style="margin-top: 100px">
         <div class="container col-xxl-8">
             <div class="d-flex">
-                <a href="{{ route('blog') }}">{{ __('Blog') }}</a>
-                <div class="mx-1"> . </div>
-                <a href="{{ route('blog.create') }}">{{ __('Edit Blog') }}</a>
 
             </div>
             <h4>{{ __('Halaman Artikel Blog') }}</h4>
