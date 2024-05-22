@@ -8,8 +8,8 @@
                 <div class="hero-text">{{ __('Selamat Datang') }} <br> {{ __('Mading SMK Negeri 1 Bangsri') }}</div>
             </div>
         </div>
-        <div class="container text-center text-light">
-            <p class="">Pengin Kerjo Sak Wisse Sekolah, Sekolah Menengah Kejuruan Solusinya</p>
+        <div class="container text-center text-light py-3">
+            <p class="fw-bold">Pengin Kerjo Sak Wisse Sekolah, Sekolah Menengah Kejuruan Solusinya</p>
         </div>
 
     </section>
@@ -61,24 +61,24 @@
         <div class="container text-center justify-content-center mx-6 py-5">
             <div class="row">
                 <div class="col-lg-2 col-md-6 mb-5 mx-3 " data-aos="fade-up-right">
-                    <img src="{{ asset('assets/images/jurusanto.png') }}" class="img-fluid" width="130" height="130"
-                        alt="">
+                    <a href="http://tbsm.smkn1bangsri.sch.id/"><img src="{{ asset('assets/images/jurusanto.png') }}"
+                            class="img-fluid" width="130" height="130" alt=""></a>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-5 mx-3 " data-aos="fade-down-left">
-                    <img src="{{ asset('assets/images/jurusanrpl.png') }}" class="img-fluid" width="120" height="120"
-                        alt="">
+                    <a href="http://pplg.smkn1bangsri.sch.id/"><img src="{{ asset('assets/images/jurusanrpl.png') }}"
+                            class="img-fluid" width="120" height="120" alt=""></a>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-5 mx-3 " data-aos="fade-up">
-                    <img src="{{ asset('assets/images/jurusanakl.png') }}" class="img-fluid" width="140" height="140"
-                        alt="">
+                    <a href="http://akl.smkn1bangsri.sch.id/"><img src="{{ asset('assets/images/jurusanakl.png') }}"
+                            class="img-fluid" width="140" height="140" alt=""></a>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-5 mx-3 " data-aos="fade-down-right">
-                    <img src="{{ asset('assets/images/jurusanotkp.png') }}" class="img-fluid" width="140" height="140"
-                        alt="">
+                    <a href="http://mplb.smkn1bangsri.sch.id/"><img src="{{ asset('assets/images/jurusanotkp.png') }}"
+                            class="img-fluid" width="140" height="140" alt=""></a>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-3 mx-3 " data-aos="fade-up-left">
-                    <img src="{{ asset('assets/images/jurusanpm.png') }}" class="img-fluid" width="140" height="140"
-                        alt="">
+                    <a href="http://pm.smkn1bangsri.sch.id/"><img src="{{ asset('assets/images/jurusanpm.png') }}"
+                            class="img-fluid" width="140" height="140" alt=""></a>
                 </div>
             </div>
         </div>
@@ -146,7 +146,7 @@
 
     {{-- Activity Photo --}}
     <section id="photo" class=" section-foto py-2">
-        <div class="container py-5">
+        <div class="container py-3">
             <div class="d-flex justify-content-between align-itmes-center">
                 <div class="d-flex align-items-center">
                     <div class="stripe-primary me-2"></div>
@@ -161,10 +161,14 @@
             <div class="row justify-content-center">
                 @foreach ($photos as $item)
                     <div class="col-3 mx-2">
+                        <div class="col text-dark text-center  shadow-sm">
+                            <img src="{{ asset('storage/photo/' . $item->image) }}" class="img-fluid" alt=""
+                                style="aspect-ratio: 16/9; object-fit:cover; border-radius:5px">
+                            <p class="py-2">{{ $item->judul }}</p>
+
+                        </div>
                         <a href="" class="image-link">
 
-                            <img src="{{ asset('storage/photo/' . $item->image) }}" class="img-fluid" alt=""
-                                style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
                         </a>
                     </div>
                 @endforeach

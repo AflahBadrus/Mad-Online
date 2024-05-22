@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('content')
-    <section class="py-5" style="margin-top: 100px">
+    <section class="py-2" style="margin-top: 100px">
         <div class="container col-xxl-8">
 
             <div class="d-flex">

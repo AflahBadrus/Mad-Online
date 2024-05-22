@@ -2,7 +2,7 @@
 
 @section('content')
     <section style="margin-top: 100px">
-        <div class="container py-5">
+        <div class="container py-2">
             <h3 class="fw-bold py-4">{{ __('Halaman Dashboard Admin') }}</h3>
             <p class="mb-3">{{ __('Selamat Datang Di Dashboard Admin') }}</p>
 

@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('content')
-    <section class="py-5" style="margin-top: 100px">
+    <section class="py-2" style="margin-top: 100px">
         <div class="container col-xxl-8">
             <h4>Halaman Photo Kegiatan</h4>
 
@@ -31,7 +31,7 @@
                         <tr>
                             <th>#</th>
                             <th>Image</th>
-
+                            <th>Judul</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -46,6 +46,10 @@
                                 </td>
                                 <td>
                                     <img src="{{ asset('storage/photo/' . $item->image) }}" height="150" alt="">
+                                </td>
+
+                                <td>
+                                    <p>{{ $item->judul }}</p>
                                 </td>
 
                                 <td>
@@ -75,6 +79,8 @@
                                                 <input type="hidden" name="id_photo" value="{{ $item->id }}">
 
                                                 <div class="form-group mb-3">
+                                                    <label for="">Judul</label>
+                                                    <input type="text" name="judul" class="form-control">
                                                     <label for="">Pilih Photo</label>
                                                     <div class="col-lg-4">
                                                         <img src="{{ asset('storage/photo/' . $item->image) }}"
@@ -138,6 +144,8 @@
                         <div class="form-group mb-3">
                             <label for="">Pilih Photo</label>
                             <input type="file" name="image" class="form-control">
+                            <label for="">judul</label>
+                            <input type="text" name="judul" class="form-control">
                         </div>
 
                         <button type="submit" class="btn btn-success">Simpan</button>

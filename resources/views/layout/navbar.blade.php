@@ -14,9 +14,6 @@
                     <a class="nav-link active mx-2" href="/news">{{ __('Berita') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active mx-2" href="/extra">{{ __('Ekstrakullikuler') }}</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link active mx-2" href="/kegiatan">{{ __('Foto Kegiatan') }}</a>
                 </li>
 

@@ -7,7 +7,7 @@
             <div class="mb-3">
                 {{ $artikel->judul }}
             </div>
-            <img src="{{ asset('storage/artikel/' . $artikel->image) }}" class="img-fluid mb-3" alt=""
+            <img src="{{ asset('storage/artikel/' . $artikel->image) }}" class="img-fluid" alt=""
                 style="aspect-ratio: 16/9; object-fit:cover; border-radius:10px">
             <div class="content-extra">
                 <p class="mb-3 text-secondary">{{ $artikel->created_at }}</p>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Photo;
 use Illuminate\Http\Request;
 
@@ -17,11 +18,13 @@ class PhotoController extends Controller
     public function store(Request $request)
     {
         $rules = [
+            'judul' => 'required',
             'image' => 'required|max:1000|mimes:jpg,jpeg,png,webp',
         ];
 
         $messages = [
-            'image.required' => 'Image wajib diisi!',
+            'judul.required' => 'Judul wajib diisi!',
+            'image.required' => 'image wajib diisi!',
         ];
 
         $this->validate($request, $rules, $messages);
@@ -31,10 +34,11 @@ class PhotoController extends Controller
         $request->file('image')->storeAs('public/photo', $fileName);
 
         Photo::create([
+            'judul' => $request->judul,
             'image' => $fileName,
         ]);
 
-        return redirect(route('photo'))->with('success', 'data berhasil di simpan');
+        return redirect(route('photo'))->with('success', 'data Foto Berhasil di simpan');
     }
 
     public function update(Request $request, $id)
@@ -43,17 +47,20 @@ class PhotoController extends Controller
 
         # Jika ada image baru
         if ($request->hasFile('image')) {
-            $fileCheck = 'required|max:1000|mimes:jpg,jpeg,png';
+            $fileCheck = 'required|mimes:jpg,jpeg,png';
         } else {
             $fileCheck = '';
         }
 
         $rules = [
+            'judul' => 'required',
             'image' => $fileCheck,
+
         ];
 
         $messages = [
-            'image.required' => 'Judul wajib diisi!',
+            'judul.required' => 'Judul wajib diisi!',
+            'image.required' => 'img wajib diisi!',
         ];
 
         $this->validate($request, $rules, $messages);
@@ -73,12 +80,12 @@ class PhotoController extends Controller
             $checkFileName = $request->old_image;
         }
         $photo->update([
+            'judul' => $request->judul,
             'image' => $checkFileName,
         ]);
 
-        return redirect(route('photo'))->with('success', 'data photo berhasil di update');
+        return redirect(route('photo'))->with('success ', 'data  photo berhasil di update');
     }
-
     public function destroy($id)
     {
         $photo = Photo::find($id);

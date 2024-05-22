@@ -2,7 +2,7 @@
 
 @section('content')
     <section style="margin-top: 100px">
-        <div class="container py-5">
+        <div class="container py-2">
             <h3 class="fw-bold mb-2">{{ __('Article Manage Page') }}</h3>
             <p>{{ __('Atur Dan Kelola Artikel KEgiatan Sekolah') }}</p>
 
