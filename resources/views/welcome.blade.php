@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="container text-center text-light py-3">
-            <p class="fw-bold">Pengin Kerjo Sak Wisse Sekolah, Sekolah Menengah Kejuruan Solusinya</p>
+            <p class="fw-bold">{{ __('Pengin Kerjo Sak Wisse Sekolah, Sekolah Menengah Kejuruan Solusine') }}</p>
         </div>
 
     </section>
@@ -135,7 +135,7 @@
                     <p class="mb-3">
                         {{ __('Bingung mau pilih ekstrakurikuler apa? Cara yang pertama adalah dengan memilih ekstrakurikuler yang sesuai dengan hobi, minat, bakat atau kemampuan. Ekstrakurikuler pada dasarnya digunakan untuk menyalurkan dan mengembangkan kemampuan yang dimilikinya agar semakin berkembang dan dapat digunakan di masa depan.') }}
                     </p>
-                    <a href="/extra" class="btn btn-outline-primary">{{ __('Selengkapnya') }}</a>
+                    <a href="#" class="btn btn-outline-primary">{{ __('Selengkapnya') }}</a>
                 </div>
                 <div class="col-lg-6">
                     <img src="{{ asset('assets/images/ekstraduo.png') }}" class="img-fluid" alt="">
@@ -150,7 +150,7 @@
             <div class="d-flex justify-content-between align-itmes-center">
                 <div class="d-flex align-items-center">
                     <div class="stripe-primary me-2"></div>
-                    <h5 class="fw-bold text-black py-3">{{ __('Foto Kegiatan Sekolah') }}</h2>
+                    <h5 class="fw-bold text-black py-3">{{ __('Foto Kegiatan') }}</h2>
 
                 </div>
                 <div class="">

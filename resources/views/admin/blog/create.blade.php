@@ -6,12 +6,12 @@
             <div class="d-flex">
             </div>
 
-            <h4>{{ __('Article Create Page') }}</h4>
+            <h4>{{ __('Halaman Buat Artikel') }}</h4>
 
             <form action="{{ route('blog.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group mb-4">
-                    <label for="">{{ __('Enter the Article Title') }}</label>
+                    <label for="">{{ __('Masukan Judul Artikel') }}</label>
                     <input type="text" name="judul" class="form-control @error('judul') is-invalid @enderror"
                         value="{{ old('judul') }}">
 
@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="form-group mb-4">
-                    <label for="">{{ __('Select Activity Photo') }}</label>
+                    <label for="">{{ __('Pilih Foto') }}</label>
                     <input type="file" name="image" class="form-control @error('image') is-invalid @enderror">
 
                     @error('image')
@@ -33,9 +33,12 @@
                     @enderror
                 </div>
 
+
                 <div class="form-group mb-4">
-                    <label for="">{{ __('News Articles') }}</label>
-                    <textarea name="desc" id="summernote">
+                </div>
+                <label for="">{{ __('Berita Artikel') }}</label>
+                <div class="form-group mb-4">
+                    <textarea name="desc">
                     {{ old('desc') }}
                 </textarea>
 
@@ -46,7 +49,8 @@
                     @enderror
                 </div>
 
-                <button type="submit" class="btn btn-success">{{ __('Save') }}</button>
+
+                <button type="submit" class="btn btn-success">{{ __('Simpan') }}</button>
             </form>
 
         </div>

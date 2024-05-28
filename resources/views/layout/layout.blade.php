@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="{{ asset('assets/icons/icon.ico') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/icons/icon.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.css" />
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
-    <title>{{ __('Mad Online') }}</title>
+    <title>{{ __('Mading Online') }}</title>
 
 </head>
 
@@ -40,14 +40,23 @@
                                         class="nav-link p-0 text-muted text-success">{{ __('Beranda') }}</a></li>
                                 <li class="nav-item mb-2"><a href="/news"
                                         class="nav-link p-0 text-muted text-success">{{ __('Berita') }}</a></li>
-                                <li class="nav-item mb-2"><a href="/extra"
-                                        class="nav-link p-0 text-muted text-success">{{ __('Ekstrakulikuller') }}</a>
-                                </li>
                                 <li class="nav-item mb-2"><a href="/kegiatan"
                                         class="nav-link p-0 text-muted text-success">{{ __('Foto Kegiatan') }}</a>
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                        <h5 class="fw-bold">{{ __('Kontak Kami') }}</h5>
+                        <p class="">Email</p>
+                        <p class="">smkn1bangsri@yahoo.co.id</p>
+                        <p class="">{{ __('Phone : ( 291 ) 772321') }}</p>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                        <h5 class="fw-bold">{{ __('Alamat') }}</h5>
+                        <p class="">Alamat</p>
+                        <p class="">JL. KH. Achmad Fauzan <br> No. 17 Bangsri Jepara</p>
+
                     </div>
                     <div class="col-12 col-md-3 mb-6">
                         <h5 class="fw-bold mb-3">{{ __('Ikuti Sosmed Kami') }}</h5>
@@ -64,18 +73,6 @@
                                     class="img fluid mx-2" alt=""></a>
 
                         </div>
-                    </div>
-                    <div class="col-12 col-md-3 mb-3">
-                        <h5 class="fw-bold">{{ __('Kontak Kami') }}</h5>
-                        <p class="">Email</p>
-                        <p class="">smkn1bangsri@yahoo.co.id</p>
-                        <p class="">{{ __('Phone : ( 291 ) 772321') }}</p>
-                    </div>
-                    <div class="col-12 col-md-3 mb-3">
-                        <h5 class="fw-bold">{{ __('Alamat') }}</h5>
-                        <p class="">Alamat</p>
-                        <p class="">JL. KH. Achmad Fauzan <br> No. 17 Bangsri Jepara</p>
-
                     </div>
                 </div>
             </footer>

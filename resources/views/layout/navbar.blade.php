@@ -1,10 +1,9 @@
 {{-- Navbar --}}
 <nav class="navbar navbar-expand-lg py-3 fixed-top bg-white ">
     <div class="container text-center">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand" href="/">
+            <img src="{{ asset('assets/icons/icon.png') }}" alt="" class="img-fluid" width="50  " height="50  ">
+        </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
