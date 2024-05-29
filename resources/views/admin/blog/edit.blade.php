@@ -40,7 +40,7 @@
 
                 <div class="form-group mb-4">
                     <label for="">{{ __('News Article') }}</label>
-                    <textarea name="desc">
+                    <textarea name="desc" id="summernote">
                     {!! $artikel->desc !!}
                 </textarea>
 

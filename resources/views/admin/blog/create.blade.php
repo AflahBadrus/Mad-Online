@@ -38,7 +38,7 @@
                 </div>
                 <label for="">{{ __('Berita Artikel') }}</label>
                 <div class="form-group mb-4">
-                    <textarea name="desc">
+                    <textarea name="desc" id="summernote">
                     {{ old('desc') }}
                 </textarea>
 
